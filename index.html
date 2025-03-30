@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Hi, </h1>
-        <h2>I'm Shreeya Bansal</h2>
+        <h1>Welcome to <span class="highlight">My Portfolio</span></h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am [Your Name], a passionate web developer.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+        <h2>About <span class="highlight">Me</span></h2>
+        <p>Hello! I'm a passionate web developer creating stunning web experiences.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Check out some of my projects below:</p>
-        <!-- Add project details here -->
+        <h2>My <span class="highlight">Projects</span></h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of the project.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of the project.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact <span class="highlight">Me</span></h2>
         <p>Email: your.email@example.com</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+        <p>© 2025 My Portfolio</p>
     </footer>
 </body>
 </html>

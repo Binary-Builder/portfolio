@@ -33,6 +33,22 @@ html {
     scroll-behavior: smooth;
 }
 
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./layer1.svg');
+}
+
+.layer2 {
+    background-image: url('./layer2.svg');
+}
+
 .left-section {
     font-family: "Roboto Mono", monospace;
     width: 50%;
@@ -138,11 +154,13 @@ section {
 }
 
 .project-card ul {
-    list-style-type: none;
+    padding-left: 30px;
     padding: 0;
+    line-height: 1.6;
 }
 
 .project-card li {
+    text-align: start;
     font-size: 1rem;
     color: rgb(59,59,59);
     margin: 5px 0;

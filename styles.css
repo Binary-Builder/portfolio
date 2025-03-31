@@ -8,8 +8,8 @@
 
 body {
     font-family: "Roboto Mono", monospace;
-    background-color: #0A192F;
-    color: white;
+    background-color: #feffec;
+    color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -33,14 +33,15 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Left Section (Introduction) */
 .left-section {
     font-family: "Roboto Mono", monospace;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    align-items: flex-start;
+    padding: 100px;
+    text-align: left;
 }
 
 .left-section h1 {
@@ -52,7 +53,6 @@ html {
     font-size: 1rem;
 }
 
-/* Right Section (Navigation) */
 .right-section {
     font-family: "Notable", serif;
     font-weight: bold;
@@ -71,15 +71,14 @@ html {
 
 .right-section a {
     text-decoration: none;
-    color: white;
-    transition: color 0.2s ease-in-out;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease-in-out;
 }
 
 .right-section a:hover {
-    color: rgb(107, 142, 190);
+    color: rgb(242, 243, 168);
 }
 
-/* Smooth fade-in animation */
 section {
     position: relative;
     display: flex;
@@ -104,35 +103,16 @@ section {
     }
 }
 
-header {
-    background: #0A192F;
-    padding: 20px;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-/* Fade in from top */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .highlight {
-    color: rgb(68, 68, 138); /* Your chosen highlight color */
-    font-weight: bold; /* Make it stand out */
+    color: rgb(247, 242, 108); 
+    font-weight: bold; 
     transition: color 0.3s ease-in-out;
 }
 
 /* Project Cards */
-
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
     justify-content: center;
     width: 90%;
@@ -140,7 +120,7 @@ header {
 }
 
 .project-card {
-    background: #112240;
+    background: rgb(255, 253, 208);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -153,7 +133,7 @@ header {
 
 .project-card h3 {
     font-size: 1.5rem;
-    color: lavender;
+    color: rgb(231, 225, 106) ;
     margin-bottom: 10px;
 }
 
@@ -164,18 +144,55 @@ header {
 
 .project-card li {
     font-size: 1rem;
-    color: white;
+    color: rgb(59,59,59);
     margin: 5px 0;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(100, 182, 247, 0.3);
+    box-shadow: 0 8px 14px rgba(100, 182, 247, 0.3);
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 18px;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #333; 
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #0073b1; 
+}
+
+.contact-item a:hover {
+    color: #005582;
 }
 
 /* Footer */
 footer {
     margin-top: 20px;
     padding: 10px;
-    background: #112240;
+    background: rgb(0, 0, 0);
+    color: white;
 }

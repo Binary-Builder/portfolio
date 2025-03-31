@@ -4,11 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=BhuTuka+Expanded+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
-
 body {
     font-family: "Roboto Mono", monospace;
-    background-color: #feffec;
+    background-color: #feedd7;
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -16,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --------------new stuff -----------*/ 
 .container {
     display: flex;
     width: 90%;
@@ -92,7 +89,7 @@ html {
 }
 
 .right-section a:hover {
-    color: rgb(242, 243, 168);
+    color: rgb(247, 159, 108);
 }
 
 section {
@@ -107,7 +104,6 @@ section {
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
-/* Animation Keyframes */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -120,12 +116,11 @@ section {
 }
 
 .highlight {
-    color: rgb(247, 242, 108); 
+    color: rgb(247, 159, 108);  /*old colour scheme(247, 242, 108)*/
     font-weight: bold; 
     transition: color 0.3s ease-in-out;
 }
 
-/* Project Cards */
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -136,7 +131,7 @@ section {
 }
 
 .project-card {
-    background: rgb(255, 253, 208);
+    background: rgb(246, 189, 156);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -146,10 +141,9 @@ section {
     margin-bottom: 30px;
 }
 
-
 .project-card h3 {
     font-size: 1.5rem;
-    color: rgb(231, 225, 106) ;
+    color: rgb(248, 120, 45) ;
     margin-bottom: 10px;
 }
 
@@ -189,6 +183,7 @@ section {
 .contact-item {
     display: flex;
     align-items: center; 
+    margin-top: 20px;
     gap: 10px; 
     font-size: 18px;
 }
@@ -207,9 +202,7 @@ section {
     color: #005582;
 }
 
-/* Footer */
 footer {
-    margin-top: 20px;
     padding: 10px;
     background: rgb(0, 0, 0);
     color: white;
